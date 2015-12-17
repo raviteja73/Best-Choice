@@ -1,0 +1,202 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin:0px;
+}
+
+.topbar{
+	background-color:rgb(35, 47, 62);
+	width:1365px;
+	height:100px;
+	margin:0 auto;
+}
+.leftdiv{
+	width:300px;
+	height:70px;
+	float:left;
+}
+#title{
+	font-size:24px;
+	padding-top:10px;
+	padding-left:10px;
+	color:#EFECEC;
+	margin:auto;
+	font-family: Helvetica;
+}
+.categories{
+	padding:22px;
+}
+.categories a{
+	text-decoration:none;
+	font-size:20px;
+	color:#EFECEC;
+}
+.centrediv{
+	float:left;
+	width:550px;
+	height:auto;
+	padding:20px;
+	margin-left:5px;
+}
+#searchbar{
+	width:450px;
+	height:35px;
+	border-radius:5px;
+	float:left;
+}
+#searchicon{
+	width:25px;
+	height:28px;
+	border:solid 2px rgba(241,240,240,1.00);
+	border-radius:3px;
+	background-color:rgba(255,255,255,0.8);
+	margin-left:-30px;
+	margin-top:2px;
+	margin-bottom:-2px;
+	
+}
+.rightdiv{
+	width:510px;
+	height:auto;
+	float:right;
+	margin:0 auto;
+	margin-left:5px;
+	margin-right:10px;
+}
+.logoutlink {
+	text-decoration:none;
+	float:right;
+	color:#EFECEC;
+	padding-right:5px;
+	font-size:18px;
+	font-family: 'Exo', sans-serif;
+}
+.cart{
+	width:70px;
+	margin-right:10px;
+	float:right;
+	padding-right:5px;
+	font-size:18px;
+	font-family: 'Exo', sans-serif;
+	text-decoration:none;
+	color:#EFECEC;
+}
+
+#cartimg{
+	width:22px;
+	height:16px;
+	background-color: rgb(35, 47, 62);
+}
+.department{
+	float:left;
+	margin-top:-20px;
+	margin-left:50px;
+}
+.deps{
+	text-decoration:none;
+	font-size:18px;
+	margin-right:40px;
+	color:#EFECEC;
+}
+.page{
+	margin:10px 0 0 5px;
+}
+.page1{
+	margin: 0 auto;
+	width:800px;
+	height:552px;;
+	border:1px medium #2D2A2A;
+	background-color:#DEDBDB;
+}
+.imageloc{
+	width:250px;
+	height:320px;
+	margin-left:60px;
+	float:left;
+}
+.imageloc img{
+	width:230px;
+	height:280px;
+	margin-top:20px;
+}
+.itemdetails{
+	float:left;
+	padding-left:20px;
+}
+#btitle{
+	font-size:24px;
+	font-weight:600;
+	font-family:Trebuchet MS;
+	color:#D13D50;
+}
+#bauthor1{
+	font-size:18px;
+	font-weight:600;
+	font-family:Helvetica;
+	float:left;
+}
+#bauthor2{
+	font-size:17px;
+	font-weight:600;
+	font-family:Helvetica;
+	font-style:italic;
+	float:left;
+	padding-top:2px;
+	color:#295CD1;
+}
+#bavailability1{
+	font-size:18px;
+	font-weight:600;
+	font-family:Helvetica;
+	clear:both;
+	float:left;
+}
+#bavailability2{
+	font-size:17px;
+	font-weight:600;
+	font-family:Helvetica;
+	font-style:italic;
+	float:left;
+	padding-top:2px;
+	color:#295CD1;
+}
+#bprice1{
+	font-size:18px;
+	font-weight:600;
+	font-family:Helvetica;
+	clear:both;
+	float:left;
+}
+#bprice2{
+	font-size:17px;
+	font-weight:0;
+	font-family:Helvetica;
+	
+	float:left;
+	padding-top:2px;
+	color:#000000;
+}
+#buy{
+	width:130px;
+	height:40px;
+	border:2px solid #B3ADAE;
+	background-color:#5B9F51;
+	color:#F9F4F4;
+	clear:both;
+	float:left;
+	font-size:24px;
+	font-weight:500;
+	border-radius:8px;
+}
+#cart{
+	width:150px;
+	height:30px;
+	border:2px solid #B3ADAE;
+	background-color:#E98440;
+	color:#F9F4F4;
+	margin-left:15px;
+	
+	font-size:14px;
+	font-weight:500;
+	border-radius:8px;
+}

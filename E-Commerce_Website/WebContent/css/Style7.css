@@ -1,0 +1,43 @@
+.message
+{
+	margin-top:280px;
+	margin-left:380px;
+	color:rgba(27,25,25,0.95);
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+body{
+	margin:0px;
+}
+
+
+.topbar{
+	background-color:rgb(35, 47, 62);
+	width:1365px;
+	height:100px;
+	margin:0 auto;
+}
+.leftdiv{
+	width:300px;
+	height:70px;
+	float:left;
+}
+#title{
+	font-size:24px;
+	padding-top:10px;
+	padding-left:10px;
+	color:#EFECEC;
+	margin:auto;
+	font-family: Helvetica;
+}
+.cart {
+	text-decoration:none;
+	float:right;
+	color:#EFECEC;
+	padding-right:5px;
+	font-size:18px;
+	font-family: 'Exo', sans-serif;
+	margin-top:80px;
+}

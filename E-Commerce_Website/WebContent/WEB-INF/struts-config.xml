@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+          
+<struts-config>
+
+
+    <!-- ======== Form Bean Definitions =================================== -->
+    <form-beans>
+       
+        <form-bean name="actionForm" type="com.uncc.struts.forms.actionForm"/>
+        <form-bean name="cartForm" type="com.uncc.struts.forms.cartForm"/>
+         <form-bean name="paymentForm" type="com.uncc.struts.forms.paymentForm"/>
+          
+          
+              
+    </form-beans>
+
+  <!-- ========== Action Mapping Definitions ============================== -->
+
+  <action-mappings>
+
+  
+    <action    path      = "/loginAction"
+               type      = "com.uncc.struts.actions.loginAction"
+               name      = "actionForm"
+               attribute = "actionForm"
+               scope     = "request"
+               validate  = "false"
+               parameter = "mode"
+               input     = "/jsp/login.jsp" >
+               
+        
+        <forward name="login" path="/jsp/login.jsp"/>
+         <forward name="signUp" path="/jsp/signUp.jsp"/>
+             <forward name="shoppingCartHome" path="/jsp/shoppingCartHome.jsp"/>
+              <forward name="buyNow" path="/jsp/buyNow.jsp"/>
+               <forward name="purchase" path="/jsp/purchase.jsp"/>
+              <forward name="errorPage" path="/jsp/errorPage.jsp"/>
+              <forward name="viewCart" path="/jsp/viewCart.jsp"/>
+               <forward name="admin" path="/jsp/admin.jsp"/>
+              
+              
+                    
+     </action>   
+     
+     
+     
+    <action    path      = "/cartAction"
+               type      = "com.uncc.struts.actions.cartAction"
+               name      = "actionForm"
+               attribute = "actionForm"
+               scope     = "request"
+               validate  = "false"
+               parameter = "mode"
+               input     = "/jsp/login.jsp" >
+               
+        
+        <forward name="login" path="/jsp/login.jsp"/>
+         <forward name="signUp" path="/jsp/signUp.jsp"/>
+             <forward name="shoppingCartHome" path="/jsp/shoppingCartHome.jsp"/>
+              <forward name="buyNow" path="/jsp/buyNow.jsp"/>
+               <forward name="purchase" path="/jsp/purchase.jsp"/>
+              <forward name="errorPage" path="/jsp/errorPage.jsp"/>
+              <forward name="viewCart" path="/jsp/viewCart.jsp"/>
+              
+                    
+     </action>   
+     
+     
+     
+      <action    path      = "/paymentAction"
+               type      = "com.uncc.struts.actions.paymentAction"
+               name      = "paymentForm"
+               attribute = "paymentForm"
+               scope     = "request"
+               validate  = "false"
+               parameter = "mode"
+               input     = "/jsp/order.jsp" >
+               
+        
+        <forward name="login" path="/jsp/login.jsp"/>
+         <forward name="signUp" path="/jsp/signUp.jsp"/>
+             <forward name="shoppingCartHome" path="/jsp/shoppingCartHome.jsp"/>
+              <forward name="buyNow" path="/jsp/buyNow.jsp"/>
+               <forward name="purchase" path="/jsp/purchase.jsp"/>
+              <forward name="errorPage" path="/jsp/errorPage.jsp"/>
+              <forward name="viewCart" path="/jsp/viewCart.jsp"/>
+               <forward name="orderSuccess" path="/jsp/orderSuccess.jsp"/>
+              
+                    
+     </action>   
+     
+     
+	
+		<action
+			path="/book"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/jsp/buyNow.jsp"
+			input="/jsp/shoppingCartHome.jsp"
+            scope="request"
+            validate="false">
+		
+	
+     </action>
+     
+     <action
+			path="/payment"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/jsp/order1.jsp"
+			input="/jsp/purchase.jsp"
+            scope="request"
+            validate="false">
+		
+	
+     </action>
+     
+     <action
+			path="/logout"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/jsp/login.jsp"
+			input="/jsp/shoppingCartHome.jsp"
+            scope="request"
+            validate="false">
+		
+	
+     </action>
+     
+     
+        <action
+			path="/books"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/jsp/books.jsp"
+			input="/jsp/shoppingCartHome.jsp"
+            scope="request"
+            validate="false">
+		
+	
+     </action>
+     
+     <action
+			path="/homepage"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/jsp/shoppingCartHome.jsp"
+			input="/jsp/buyNow.jsp"
+            scope="request"
+            validate="false">
+		
+	
+     </action>
+     
+    
+      
+
+  </action-mappings>
+  
+  
+</struts-config>
+  
